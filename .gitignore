@@ -1,4 +1,4 @@
 # Ignore following file types
 .env
 .gitattributes
-*.ppt
+*.pptx
