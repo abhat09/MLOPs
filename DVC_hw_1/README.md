@@ -43,7 +43,7 @@ Disclaimer: Utilized the help of Chat-GPT for setting up the LakeFS and GitLFS c
 - Compares performance with non-private model.
 - Executed on **Google Cloud**. 
 
-### `comparison_slides.ppt`
+### `comparison_slides.pdf`
 
 - Slides comparing:
   - lakeFS vs. Git LFS for data versioning.

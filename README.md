@@ -4,6 +4,6 @@
 - Fixed access issues to allow notebook to run
 - Deploy an inference machine on a locally hosted UI
 
-## DVC_hw1: 
+## DVC_hw_1: 
 - Practice utilizing data version control tools (LakeFS, GitLFS) when cleaning data
 - EDA and Model development with and without Differential Privacy 
