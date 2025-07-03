@@ -26,6 +26,7 @@ Disclaimer: Utilized the help of Chat-GPT for setting up the LakeFS and GitLFS c
   - Create repository and branches on **lakeFS**.
   - Upload versioned train/test CSVs using the `lakectl` CLI.
 - Data is stored in an Amazon S3 bucket via lakeFS.
+- Within the cli_commands folder.
 
 ### `gitlfs_commands.sh`
 
@@ -34,12 +35,13 @@ Disclaimer: Utilized the help of Chat-GPT for setting up the LakeFS and GitLFS c
   - Add and commit files to a local Git repo.
   - Push the files to GitHub.
 - Useful for smaller-scale projects requiring versioning via Git.
+- Within the cli_commands folder.
 
 ### `dp_model.ipynb`
 
 - Trains a linear regression model using **differential privacy** via TensorFlow Privacy.
 - Compares performance with non-private model.
-- Executed on **Google Cloud** for scalability.
+- Executed on **Google Cloud**. 
 
 ### `comparison_slides.ppt`
 
