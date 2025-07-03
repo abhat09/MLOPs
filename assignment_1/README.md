@@ -60,6 +60,8 @@ Data versioning was handled using the `lakectl` CLI tool.
 
 ### Folder Structure
 
+```text
+
 mlops-hw/
 ├── main/
 │ ├── athletes.csv
@@ -69,14 +71,15 @@ mlops-hw/
 │ └── v2/
 │ ├── athletes_v2_train.csv
 │ └── athletes_v2_test.csv
+```
 
 - **Repository Overview:**
 
-  ![LakeFS Repository](pics_read/lakefs_repo.png)
+  ![LakeFS Repository](pics_readme/lakefs_repo.png)
 
 - **Directory View of `main` Branch:**
 
-  ![LakeFS Directory](pics_read/lakefs_directory_structure.png)
+  ![LakeFS Directory](pics_readme/lakefs_directory_structure.png)
 
 ---
 
@@ -90,6 +93,7 @@ Data versioning was handled using the `gitlfs` CLI tool.
 
 ### Folder Structure
 
+```text
 mlops-data/
 ├── main/
 │ ├── athletes.csv
@@ -100,10 +104,11 @@ mlops-data/
 │ ├── athletes_v2_train.csv
 │ └── athletes_v2_test.csv
 
+```
 - **Repository Overview:**
 
-  ![GitLFS Repository](pics_read/gitlfs_repo.png)
+  ![GitLFS Repository](pics_readme/gitlfs_repo.png)
 
 - **Tracker View of CSV Files:**
 
-  ![GitLFS Tracker](pics_read/gitlfs_tracker.png)
+  ![GitLFS Tracker](pics_readme/gitlfs_tracker.png)
