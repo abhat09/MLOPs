@@ -76,7 +76,7 @@ mlops-hw/
 
 - **Directory View of `main` Branch:**
 
-  ![LakeFS Directory](lakefs_directory.png)
+  ![LakeFS Directory](lakefs_directory_structure.png)
 
 ---
 
