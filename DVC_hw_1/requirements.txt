@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+tensorflow==2.15.0
+tensorflow-privacy==0.9.0
