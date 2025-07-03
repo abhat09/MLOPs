@@ -72,11 +72,11 @@ mlops-hw/
 
 - **Repository Overview:**
 
-  ![LakeFS Repository](lakefs_repo.png)
+  ![LakeFS Repository](pics_read/lakefs_repo.png)
 
 - **Directory View of `main` Branch:**
 
-  ![LakeFS Directory](lakefs_directory_structure.png)
+  ![LakeFS Directory](pics_read/lakefs_directory_structure.png)
 
 ---
 
@@ -102,8 +102,8 @@ mlops-data/
 
 - **Repository Overview:**
 
-  ![GitLFS Repository](gitlfs_repo.png)
+  ![GitLFS Repository](pics_read/gitlfs_repo.png)
 
 - **Tracker View of CSV Files:**
 
-  ![GitLFS Tracker](gitlfs_tracker.png)
+  ![GitLFS Tracker](pics_read/gitlfs_tracker.png)

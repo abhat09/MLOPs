@@ -1,4 +1,3 @@
 # Ignore following file types
 .env
 .gitattributes
-*.png
