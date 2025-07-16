@@ -4,7 +4,7 @@
 
 The goal of this assignment is to utilize two different data versioning tools — **lakeFS** and **Git LFS** — to manage datasets used in a linear regression modeling workflow. This includes handling datasets with and without differential privacy.
 
-Disclaimer: Utilized the help of Chat-GPT for setting up the LakeFS and GitLFS connections and troubleshooting tensorflow DP compatibility issues.
+### Disclaimer: Utilized the help of Chat-GPT for setting up the LakeFS and GitLFS connections and troubleshooting tensorflow DP compatibility issues.
 ---
 
 ## Files and Deliverables

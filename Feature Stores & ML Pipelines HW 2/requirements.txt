@@ -1,0 +1,11 @@
+pandas
+numpy
+pyspark
+mlflow
+databricks-feature-store
+codecarbon
+xgboost
+scikit-learn
+matplotlib
+seaborn
+shap
