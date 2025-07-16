@@ -17,7 +17,7 @@ This project focuses on designing a Feature Store integrated with a Machine Lear
   - Two feature versions.
   - Two different hyperparameter sets.
 - Run experiments for all 4 combinations.
-- Compare the results quantitatively (metrics such as RMSE, R², and CO₂ emissions) and qualitatively (model interpretability using SHAP plots).
+- Compare the results quantitatively (metrics such as RMSE, R², and CO₂ emissions) and qualitatively (feature importances using SHAP plots).
 
 ---
 
@@ -35,18 +35,13 @@ This project focuses on designing a Feature Store integrated with a Machine Lear
 
 ### Version 1
 - Columns:
-  - gender
-  - age
-  - height
-  - other original features from athletes.csv
-- Description: Original feature set without additional engineered or enhanced features.
+  - `gender`, `age`, `height`, `weight`, `athletes_id`, `total_lift`
+- Description: Original cleaned feature set without additional engineered or enhanced features.
 
 ### Version 2
 - Columns:
-  - All columns from Version 1, plus:
-  - weight
-  - additional engineered features (if any)
-- Description: Enhanced feature set with additional attributes that improve the model’s predictive power.
+  - All columns from Version 1, plus: `BMI`, `candj_rel`, `snatch_rel`, `deadlift_rel`, `backsq_rel`.
+- Description: Enhanced feature set with additional attributes (BMI and relative lifts) that can improve the model’s predictive power.
 
 ---
 
@@ -64,13 +59,12 @@ This project focuses on designing a Feature Store integrated with a Machine Lear
 ![Runtimes](xgb_runtimes.png)
 
 ---
+## 🔍 Quantitative & Qualitative Analysis
 
-## Quantitative Analysis
-Version 2 of the dataset consistently yielded much lower RMSE values and higher R² scores compared to version 1. The best performing model uses dataset version 2 with the hyperparameters: 200 estimators, max tree depth of 5, and a learning rate of 0.05. This improvement is expected since version 2 includes additional features that enhance predictive capabilities. Across both dataset versions, XGBoost models showed similar performance regardless of hyperparameter configuration, although the second hyperparameter set performed slightly better in version 2 than in version 1. All models exhibited comparably low CO₂ emissions, with the fourth model (v2 with second hyperparameter set) producing marginally higher emissions.
+- **Best Model:** Data Version 2 with `n_estimators=200`, `max_depth=5`, `learning_rate=0.05`  
+  ➤ RMSE: **19.13**, R²: **0.995**, CO₂: **0.000041 kg**
 
----
+Version 2 outperformed version 1 across all metrics, showing significantly lower RMSE and higher R² due to the inclusion of additional features. SHAP plots reveal that while gender ("female") was most important in version 1, "weight" became the dominant predictor in version 2, indicating a shift toward more meaningful physical attributes with the richer feature set.
 
-## Qualitative Analysis (SHAP Feature Importance)
-For models trained on version 1 (models 1 and 2), SHAP plots show that the most important feature is gender "female," while "male" is the least important, with consistent feature importance rankings across both models. For version 2 models (models 3 and 4), which include additional features, "weight" becomes the most important feature while "male" remains the least important. Both version 2 models also share similar feature importance rankings. Overall, adding features in version 2 shifts the model’s focus from gender-based predictors to physical attributes such as weight, reflecting improved interpretability and richer data representation.
 
 ---
