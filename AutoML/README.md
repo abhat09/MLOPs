@@ -6,6 +6,8 @@ The goal of this assignment is to leverage two different AutoML platforms — **
 
 The work was done using Google Colab.
 
+**Disclaimer:** Utilized the help of Chat-GPT to setup the AutoML functions 
+
 ---
 
 ## Files and Deliverables
