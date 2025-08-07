@@ -1,5 +1,0 @@
-pandas
-numpy
-h2o
-matplotlib
-pycaret[full]

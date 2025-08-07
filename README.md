@@ -15,3 +15,4 @@ This repository contains projects from the Summer 2025 MLOps course. Each assign
 - 🧱 ML Pipelines and Experiment Tracking in Databricks  
 - 🏪 Feature Store integration with ML workflows
 - 🤖 AutoML tools and frameworks (PyCaret, H2O)
+- 📊 Model Monitoring and Drift Detection with EvidentlyAI
